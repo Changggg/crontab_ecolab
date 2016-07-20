@@ -1,0 +1,5 @@
+#!/bin/bash
+
+source /home/nilutpal/Documents/crontab_ecolab/config.sh
+
+curl -X POST --data-ascii '{"function":"ecopadq.tasks.datatask.teco_spruce_pulldata","queue":"celery","args":[],"kwargs":{  },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.datatask.teco_spruce_pulldata/.json -H Content-Type:application/json -H 'Authorization: Token ${token_key}'
