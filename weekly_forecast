@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /home/nilutpal/Documents/crontab_ecolab/config.sh
+source config.sh
 
 curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast","queue":"celery","args":[{
             "rdepth": "150", 
@@ -43,9 +43,8 @@ curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast
         2024, 
         366],"kwargs":{ "co2_treatment": 380.0, 
         "public": "EM1_FORECAST_380_0", 
-        "temperature_treatment": 0.0 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token {token_key}'
+        "temperature_treatment": 0.0 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token ${token_key}'
 
-sleep 20m
 curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast","queue":"celery","args":[{
             "rdepth": "150", 
             "GLmax": "39.2", 
@@ -87,9 +86,8 @@ curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast
         2024, 
         366],"kwargs":{ "co2_treatment": 380.0, 
         "public": "EM1_FORECAST_380_2.25", 
-        "temperature_treatment": 2.25 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token {token_key}'
+        "temperature_treatment": 2.25 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token ${token_key}'
 
-sleep 20m
 
 curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast","queue":"celery","args":[{
             "rdepth": "150", 
@@ -132,9 +130,8 @@ curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast
         2024, 
         366],"kwargs":{ "co2_treatment": 380.0, 
         "public": "EM1_FORECAST_380_4.5", 
-        "temperature_treatment": 4.5 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token {token_key}'
+        "temperature_treatment": 4.5 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token ${token_key}'
 
-sleep 20m
 curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast","queue":"celery","args":[{
             "rdepth": "150", 
             "GLmax": "39.2", 
@@ -176,9 +173,8 @@ curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast
         2024, 
         366],"kwargs":{ "co2_treatment": 380.0, 
         "public": "EM1_FORECAST_380_6.75", 
-        "temperature_treatment": 6.75 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token {token_key}'
+        "temperature_treatment": 6.75 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token ${token_key}'
 
-sleep 20m
 
 curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast","queue":"celery","args":[{
             "rdepth": "150", 
@@ -221,9 +217,8 @@ curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast
         2024, 
         366],"kwargs":{ "co2_treatment": 380.0, 
         "public": "EM1_FORECAST_380_9", 
-        "temperature_treatment": 9 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token {token_key}'
+        "temperature_treatment": 9 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token ${token_key}'
 
-sleep 20m
 
 curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast","queue":"celery","args":[{
             "rdepth": "150", 
@@ -266,9 +261,8 @@ curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast
         2024, 
         366],"kwargs":{ "co2_treatment": 800.0, 
         "public": "EM1_FORECAST_800_0", 
-        "temperature_treatment": 0.0 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token {token_key}'
+        "temperature_treatment": 0.0 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token ${token_key}'
 
-sleep 20m
 
 curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast","queue":"celery","args":[{
             "rdepth": "150", 
@@ -311,9 +305,8 @@ curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast
         2024, 
         366],"kwargs":{ "co2_treatment": 800.0, 
         "public": "EM1_FORECAST_800_2.25", 
-        "temperature_treatment": 2.25 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token {token_key}'
+        "temperature_treatment": 2.25 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token ${token_key}'
 
-sleep 20m
 
 curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast","queue":"celery","args":[{
             "rdepth": "150", 
@@ -356,9 +349,8 @@ curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast
         2024, 
         366],"kwargs":{ "co2_treatment": 800.0, 
         "public": "EM1_FORECAST_800_4.5", 
-        "temperature_treatment": 4.5 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token {token_key}'
+        "temperature_treatment": 4.5 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token ${token_key}'
 
-sleep 20m
 
 curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast","queue":"celery","args":[{
             "rdepth": "150", 
@@ -401,9 +393,8 @@ curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast
         2024, 
         366],"kwargs":{ "co2_treatment": 800.0, 
         "public": "EM1_FORECAST_800_6.75", 
-        "temperature_treatment": 6.75 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token {token_key}'
+        "temperature_treatment": 6.75 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token ${token_key}'
 
-sleep 20m
 
 curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast","queue":"celery","args":[{
             "rdepth": "150", 
@@ -446,6 +437,6 @@ curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast
         2024, 
         366],"kwargs":{ "co2_treatment": 800.0, 
         "public": "EM1_FORECAST_800_9", 
-        "temperature_treatment": 9.0 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token {token_key}'
+        "temperature_treatment": 9.0 },"tags": []}' http://0.0.0.0:8888/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token ${token_key}'
 
  
