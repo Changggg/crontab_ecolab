@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source config.sh
+source /home/ecopad/services/crontab_ecolab/config.sh
 
 curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast","queue":"celery","args":[{
             "rdepth": "150", 
@@ -217,7 +217,7 @@ curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast
         2024, 
         366],"kwargs":{ "co2_treatment": 380.0, 
         "public": "EM1_FORECAST_380_9", 
-        "temperature_treatment": 9 },"tags": []}' http://ecolab.cybercommons.org/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token '${token_key}
+        "temperature_treatment": 9.0 },"tags": []}' http://ecolab.cybercommons.org/api/queue/run/ecopadq.tasks.tasks.teco_spruce_forecast/.json -H Content-Type:application/json -H 'Authorization: Token '${token_key}
 
 
 curl -X POST --data-ascii '{"function":"ecopadq.tasks.tasks.teco_spruce_forecast","queue":"celery","args":[{
